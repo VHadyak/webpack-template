@@ -6,12 +6,9 @@ export default [
     languageOptions: {
       globals: {
         ...globals.browser, // Include browser globals if needed
-        ...globals.node,    // Include Node.js globals
+        ...globals.node, // Include Node.js globals
       },
-      parserOptions: {
-        ecmaVersion: 12,
-        sourceType: "module", 
-      },
+      parserOptions: { ecmaVersion: 12, sourceType: "module" },
     },
   },
   pluginJs.configs.recommended,
